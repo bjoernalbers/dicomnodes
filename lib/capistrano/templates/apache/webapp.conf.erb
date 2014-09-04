@@ -9,5 +9,6 @@ DocumentRoot <%= current_path.join('public') %>
 	BalancerMember http://127.0.0.1:3001
 </Proxy>
 ProxyPass /assets !
+ProxyPass /DICOMNodes.plist !
 ProxyPass / balancer://app/
 ProxyPassReverse / balancer://app/
